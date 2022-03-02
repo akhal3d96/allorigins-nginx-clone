@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Test</title>
+  </head>
+
+  <body>
+    <p>
+      I open the browser console and test the functionality using
+      <code>fetch()</code>
+    </p>
+    <pre>
+fetch(`http://0.0.0.0:8080/get?=https://stackoverflow.com/questions/53353572/proxy-pass-cannot-have-uri-part-in-location-given-by-regular-expression`)
+              .then(response => {
+                if (response.ok) return response.text()
+                throw new Error('Network response was not ok.')
+              })
+              .then(data => console.log(data));
+    </pre>
+  </body>
+</html>
